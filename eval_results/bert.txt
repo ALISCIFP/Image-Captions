@@ -1,0 +1,336 @@
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.62s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.39s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:19:17<00:00,  1.33it/s]
+Completed validation...
+Validation loss: 1.5514293070946115
+BLEU-1: 0.8465346617704747
+BLEU-2: 0.7058478631874998
+BLEU-3: 0.5966642233295152
+BLEU-4: 0.5094580009913211
+Hypotheses: a baseball player wearing a white uniform and white pants waiting for the ball .
+References: a baseball player wearing a white uniform and black socks waiting for the ball .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+
+Completed validation...
+Validation loss: 1.549789117133716
+BLEU-1: 0.8471046915773135
+BLEU-2: 0.7067324867280518
+BLEU-3: 0.5975411864163531
+BLEU-4: 0.510285152257837
+Hypotheses: a man in a and a woman in a wedding dress stand near a cake .
+References: a man in uniform and a woman in a bridal gown stand near a cake .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+Epoch=20
+
+loading annotations into memory...
+Done (t=0.61s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.39s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:20:55<00:00,  1.30it/s]
+Completed validation...
+Validation loss: 1.5476979590731323
+BLEU-1: 0.847602623047735
+BLEU-2: 0.7077042646362615
+BLEU-3: 0.5988787527817045
+BLEU-4: 0.5118709855381137
+Hypotheses: a man and a young boy sit at a deck with a <unk> with a plate full of food .
+References: a woman and a young man sit on a deck at a <unk> with a table full of food .
+
+Epoch=27
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.60s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.39s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:23:13<00:00,  1.27it/s]
+Completed validation...
+Validation loss: 1.5475090774096556
+BLEU-1: 0.8475156864335421
+BLEU-2: 0.7076345005398668
+BLEU-3: 0.5987925028507866
+BLEU-4: 0.511862447964793
+Hypotheses: a baseball with a catchers mitt mitt on holding a a baseball player .
+References: a catcher with a catcher 's mitt on squatting behind a baseball player .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+Epoch =28
+
+zshen@cuda-1 checkpoints]$ cd ..
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.61s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.40s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:20:34<00:00,  1.31it/s]
+Completed validation...
+Validation loss: 1.5474113295731196
+BLEU-1: 0.8475279248427562
+BLEU-2: 0.7073816110063869
+BLEU-3: 0.5984519505831493
+BLEU-4: 0.5114639942705871
+Hypotheses: two carrots of a carrot and a carrot carrot to <unk> <unk> a <unk> and and <unk> <unk> .
+References: two halves of an onion and a carrot positioned to <unk> either a goofy face or male <unk> .
+Lossy conversion from float32 to uint8. Range [-2.0836544036865234, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+epoch =30
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.61s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.39s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:29:03<00:00,  1.19it/s]
+Completed validation...
+Validation loss: 1.5787064295275108
+BLEU-1: 0.8408034077604218
+BLEU-2: 0.6957795331987472
+BLEU-3: 0.5842974421708644
+BLEU-4: 0.4958045065116171
+Hypotheses: a group of people looking at a commercial plane with its open hatch hatch open . .
+References: a group of people looking at an air plane with its back cargo hold door open .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+epoch =10
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.62s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.40s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:17:23<00:00,  1.36it/s]
+Completed validation...
+Validation loss: 1.556319681073851
+BLEU-1: 0.8456994740321475
+BLEU-2: 0.7041101636362265
+BLEU-3: 0.5946124364319123
+BLEU-4: 0.5073472430725164
+Hypotheses: a red bike with red red is chained to a black door on a sidewalk .
+References: a red bike with white handles is locked to a black pole on a sidewalk .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+
+epoch=15
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.60s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.41s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:17:56<00:00,  1.35it/s]
+Completed validation...
+Validation loss: 1.5471951328137183
+BLEU-1: 0.8475999988461709
+BLEU-2: 0.7076717648432707
+BLEU-3: 0.5989806774814684
+BLEU-4: 0.5121407967294074
+Hypotheses: a pair of pairs , , two pair , and a pair of scissors .
+References: a couple of dog patterns , loose cotton , and a pair of scissors .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+
+Epoch=38
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.71s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.45s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:15:12<00:00,  1.40it/s]
+Completed validation...
+Validation loss: 1.5472391142278374
+BLEU-1: 0.847593880533321
+BLEU-2: 0.7075093295174945
+BLEU-3: 0.5988404335342984
+BLEU-4: 0.5119167243853913
+Hypotheses: a surfer in the top of a wave in the air doing a trick .
+References: a surfer at the top of a wave in the air doing a trick .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+Epoch=39
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.58s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.38s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:15:26<00:00,  1.40it/s]
+Completed validation...
+Validation loss: 1.546874475826208
+BLEU-1: 0.8477057017372933
+BLEU-2: 0.7079114467618097
+BLEU-3: 0.5992524105450949
+BLEU-4: 0.5123218963442319
+Hypotheses: a bathroom with a large sink and sink has a a room with a toilet and toilet .
+References: a bathroom with a large sink and mirror opens onto a room with the toilet and bathtub .
+Lossy conversion from float32 to uint8. Range [-2.0357141494750977, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+epoch=40
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.60s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.40s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:21:19<00:00,  1.30it/s]
+Completed validation...
+Validation loss: 1.5473761807465836
+BLEU-1: 0.847466343712818
+BLEU-2: 0.7074540696860782
+BLEU-3: 0.5986798001982329
+BLEU-4: 0.5117470739151158
+Hypotheses: a woman 's face sitting in front of a oven with has a food of food in it .
+References: a woman 's face sitting in front of an oven that has a pan of food in it .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+Epoch =48
+
+(emb) [zshen@cuda-1 checkpoints]$ cd ..
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.60s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.45s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:20:57<00:00,  1.30it/s]
+Completed validation...
+Validation loss: 1.5473784584012218
+BLEU-1: 0.8474466858615751
+BLEU-2: 0.7073546856586331
+BLEU-3: 0.5985035978589134
+BLEU-4: 0.5115581269872718
+Hypotheses: a small bathroom with a sink , a sink , mirror toilet , and grey walls .
+References: a small bathroom with a mirror , a sink , a toilet , and grey tiles .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+epoch =53
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.60s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.39s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:22:58<00:00,  1.27it/s]
+Completed validation...
+Validation loss: 1.5473505271791737
+BLEU-1: 0.847599567715931
+BLEU-2: 0.7077666569651353
+BLEU-3: 0.5990277142210899
+BLEU-4: 0.5121280965245765
+Hypotheses: a meal of a table in a restaurant next to a glasses of sunglasses .
+References: a meal on a table in a restaurant next to a pair of sunglasses .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+epoch = 55
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_bert.py
+loading annotations into memory...
+Done (t=0.60s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.40s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:18:16<00:00,  1.35it/s]
+Completed validation...
+Validation loss: 1.5479036875321301
+BLEU-1: 0.8475008427377376
+BLEU-2: 0.7073509990486423
+BLEU-3: 0.5985369949880239
+BLEU-4: 0.511596806636846
+Hypotheses: a of breakfast food include chocolate , toast toast , and bacon .
+References: plates of breakfast food include omelet , french toast , and bacon .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+
+epoch=59
+
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='1' python train_bert.py
+loading annotations into memory...
+Done (t=0.86s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.30s)
+creating index...
+index created!
+Pre-Trained BERT Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [1:36:17<00:00,  1.10it/s]
+Completed validation...
+Validation loss: 1.5388035606490127
+BLEU-1: 0.8494393964715554
+BLEU-2: 0.7107971230551273
+BLEU-3: 0.6027088726089171
+BLEU-4: 0.5161424601448168
+Hypotheses: a group of young boys standing around a soccer soccer playing around a soccer ball .
+References: a group of young boys standing around a soccer field kicking around a soccer ball .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.640000104904175]. Convert image to uint8 prior to saving to suppress this warning.
+
+train_val epoch=11

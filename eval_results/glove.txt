@@ -1,0 +1,22 @@
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_glove.py
+loading annotations into memory...
+Done (t=0.58s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.40s)
+creating index...
+index created!
+Pre-Trained GloVe Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [14:20<00:00,  7.36it/s]
+Completed validation...
+Validation loss: 3.1037994983329846
+BLEU-1: 0.5166166064158876
+BLEU-2: 0.22299739449996264
+BLEU-3: 0.10001633022221662
+BLEU-4: 0.04803988959631456
+Hypotheses: a group and child child are skis and gear on snowboards ski on skis .
+References: a woman and a child with red ski gear and a helmet wearing skis .
+Lossy conversion from float32 to uint8. Range [-2.1179039478302, 2.1694118976593018]. Convert image to uint8 prior to saving to suppress this warning.
+epoch=20

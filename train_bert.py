@@ -42,8 +42,8 @@ import imageio
 
 # hyperparams
 grad_clip = 5.
-num_epochs = 4
-batch_size = 32 
+num_epochs = 20
+batch_size = 64
 decoder_lr = 0.0004
 
 # if both are false them model = baseline
@@ -262,11 +262,11 @@ END = 2
 UNK = 3
 
 # Load vocabulary
-with open('data/vocab.pkl', 'rb') as f:
+with open('data/vocab_train_val.pkl', 'rb') as f:
     vocab = pickle.load(f)
 
 # load data
-train_loader = get_loader('train', vocab, batch_size)
+train_loader = get_loader('train_val', vocab, batch_size)
 val_loader = get_loader('val', vocab, batch_size)
 
 #############
@@ -329,7 +329,7 @@ def train():
         losses = loss_obj()
         num_batches = len(train_loader)
 
-        for i, (imgs, caps, caplens) in enumerate(tqdm(train_loader)):
+        for i, (imgs, caps, caplens,img_ids) in enumerate(tqdm(train_loader)):
 
             imgs = encoder(imgs.to(device))
             caps = caps.to(device)
@@ -470,7 +470,7 @@ def validate():
 
     num_batches = len(val_loader)
     # Batches
-    for i, (imgs, caps, caplens) in enumerate(tqdm(val_loader)):
+    for i, (imgs, caps, caplens,img_ids) in enumerate(tqdm(val_loader)):
 
         imgs_jpg = imgs.numpy() 
         imgs_jpg = np.swapaxes(np.swapaxes(imgs_jpg, 1, 3), 1, 2)

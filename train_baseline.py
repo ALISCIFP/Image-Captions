@@ -42,8 +42,8 @@ import imageio
 
 # hyperparams
 grad_clip = 5.
-num_epochs = 4
-batch_size = 32 
+num_epochs = 20
+batch_size = 64 
 decoder_lr = 0.0004
 
 # if both are false them model = baseline
@@ -52,7 +52,7 @@ glove_model = False
 bert_model = False
 
 from_checkpoint = True
-train_model = False
+train_model = True	
 valid_model = True
 
 ###################

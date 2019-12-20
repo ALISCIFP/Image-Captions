@@ -44,23 +44,23 @@ class DataLoader(data.Dataset):
         caption.extend([vocab(token) for token in tokens])
         caption.append(vocab('<end>'))
         target = torch.Tensor(caption)
-        return image, target
+        return image, target, img_id
 
     def __len__(self):
         return len(self.ids)
 
 def collate_fn(data):
     data.sort(key=lambda  x: len(x[1]), reverse=True)
-    images, captions = zip(*data)
+    images, captions,img_ids = zip(*data)
 
     images = torch.stack(images, 0)
-
+#     img_ids = [i for i in img_ids]
     lengths = [len(cap) for cap in captions]
     targets = torch.zeros(len(captions), max(lengths)).long()
     for i, cap in enumerate(captions):
         end = lengths[i]
         targets[i, :end] = cap[:end]
-    return images, targets, lengths
+    return images, targets, lengths,img_ids
 
 def get_loader(method, vocab, batch_size):
 
@@ -71,7 +71,12 @@ def get_loader(method, vocab, batch_size):
     elif method =='val':
         root = 'data/val2014_resized'
         json = 'data/annotations/captions_val2014.json'
-
+    elif method =='train_val':
+        root = 'data/train_val2014_resized'
+        json = 'data/annotations/captions_train_val2014.json'
+    elif method =='test':
+        root = 'data/test2014_resized'
+        json = 'data/annotations/captions_test2014.json'
     # rasnet transformation/normalization
     transform = transforms.Compose([
         transforms.RandomCrop(224),

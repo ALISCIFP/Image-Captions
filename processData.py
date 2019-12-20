@@ -80,7 +80,8 @@ def main(caption_path,vocab_path,threshold):
         pickle.dump(vocab, f)
 
     # print("resizing images...")
-    splits = ['val','train']
+#     splits = ['val','train','test']
+    splits = ['test']
 
     for split in splits:
         folder = './data/%s2014' %split
@@ -97,8 +98,8 @@ def main(caption_path,vocab_path,threshold):
 
     print("done resizing images...")
 
-caption_path = './data/annotations/captions_train2014.json'
-vocab_path = './data/vocab.pkl'
+caption_path = './data/annotations/captions_train_val2014.json'
+vocab_path = './data/vocab_train_val.pkl'
 threshold = 5
 
-# main(caption_path,vocab_path,threshold)
+main(caption_path,vocab_path,threshold)

@@ -1,0 +1,19 @@
+(emb) [zshen@cuda-1 Image-Captions]$ CUDA_VISIBLE_DEVICES='0' python train_baseline.py
+loading annotations into memory...
+Done (t=0.61s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.41s)
+creating index...
+index created!
+Pre-Trained Baseline Model
+Started validation...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6333/6333 [14:32<00:00,  7.25it/s]
+Completed validation...
+Validation loss: 3.0912900737857827
+BLEU-1: 0.5178948833056997
+BLEU-2: 0.2240670974708213
+BLEU-3: 0.10037922343798866
+BLEU-4: 0.04806689770003992
+Epoch = 20
